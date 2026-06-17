@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Landing Page</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+        color: #333;
+        background: #f5f7fb;
+    }
+
+    header {
+        background: linear-gradient(135deg, #4f46e5, #06b6d4);
+        color: white;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px;
+        background: white;
+    }
+
+    .hero-text {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #111;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #4f46e5;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .btn:hover {
+        background: #3730a3;
+    }
+
+    .hero img {
+        flex: 1;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .features {
+        padding: 60px;
+        text-align: center;
+    }
+
+    .features h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    .feature-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px;
+        background: #eef2ff;
+        align-items: center;
+    }
+
+    .about img {
+        flex: 1;
+        max-width: 450px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .about-text {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #111827;
+        color: white;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero, .about {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Web Development For Begginers</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>How To Become a Proffesional Web Developer</h2>
+        <p>
+            I will teach you how create stunning webpages and how to structure sections, create layouts, and design beautiful web pages using only HTML and CSS.
+            It will help you master alignment, spacing, and responsive design.
+        </p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <img src="C:\Users\User\Documents\Land Page\WhatsApp Image 2026-06-17 at 09.37.11.jpeg" alt="Hero Image">
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>What You Will Learn</h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <img src="C:\Users\User\Documents\Land Page\WhatsApp Image 2026-06-17 at 09.36.19.jpeg">
+            <h3>HTML Structure</h3>
+            <p>Learn how to structure web pages using semantic HTML elements.</p>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\User\Documents\Land Page\WhatsApp Image 2026-06-17 at 09.48.56.jpeg">
+            <h3>CSS Styling</h3>
+            <p>Style your pages with colors, spacing, fonts, and layouts.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=80">
+            <h3>Responsive Design</h3>
+            <p>Create layouts that adapt beautifully to all screen sizes.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <img src="C:\Users\User\Documents\Land Page\WhatsApp Image 2026-06-17 at 09.48.01.jpeg" alt="About image">
+
+    <div class="about-text">
+        <h2>Why This Project Matters</h2>
+        <p>
+            Learning these skills helps beginners learn and practice real-world web design skills.
+            You will learn how to divide sections, arrange content, control spacing, and build visually appealing layouts.
+            Most importantly, it encourages creativity while strengthening your HTML and CSS foundation.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Ronald Munashe Chipumha. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
